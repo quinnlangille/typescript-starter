@@ -1,7 +1,7 @@
-import { BaseError } from './Error';
+import { BaseError } from "./Error";
 
 export class BadRequestError extends BaseError {
   constructor(message) {
-    super(message, '400', 'Bad Request Error', BadRequestError);
+    super(message, "400", "Bad Request Error", BadRequestError);
   }
 }
