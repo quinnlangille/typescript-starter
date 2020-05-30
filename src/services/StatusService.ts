@@ -1,17 +1,17 @@
-import { injectable, inject } from 'inversify';
-import { Logger } from '../utils/Logger';
+import { injectable, inject } from "inversify";
+import { Logger } from "../utils/Logger";
 
 interface Status {
-   time: number;
-   requestID: string;
+  time: number;
+  requestID: string;
 }
 
 @injectable()
 export class StatusService {
-    public async getStatus(requestId: string): Promise<Status> {
-        return {
-           time: Date.now(),
-           requestID: requestId,
-        }
-    }
+  public async getStatus(requestId: string): Promise<Status> {
+    return {
+      time: Date.now(),
+      requestID: requestId,
+    };
+  }
 }
